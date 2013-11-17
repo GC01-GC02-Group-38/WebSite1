@@ -1,0 +1,19 @@
+<div id="settings_edit_behaviours_add" class="page" data-role="page" data-add-back-btn="true">
+    <div id="header_settings_edit_behaviours_add" class="header" data-role="header" data-position="fixed"><h1>Add Behaviour</h1></div>
+    <div data-role="content" class="content">
+        <div data-role="fieldcontain">
+            <label for="behaviour_name">Behaviour:</label>
+            <input type="text" name="behaviour_name" id="behaviour_name" value="" />
+        </div>
+        <div data-role="fieldcontain">
+            <label for="behaviour_description">Description:</label>
+            <textarea cols="10" rows="15" name="behaviour_description" id="behaviour_description"></textarea>
+        </div>
+        <div data-role="fieldcontain">
+            <label for="behaviour_timeout">Timeout (seconds): </label> 
+            <!-- step="10" makes 10 second steps, makes input easier -->
+            <input type="range"name="behaviour_timeout" id="behaviour_timeout" value="10" min="0" max="600" data-highlight="true" step="10" />
+        </div>
+        <a id="save_new_behaviour" data-role="button" style="max-width: 300px;" data-mini="true">Save</a>
+    </div>
+</div>

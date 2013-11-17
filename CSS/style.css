@@ -1,0 +1,41 @@
+/*disable mousese lection of text (for browser view)*/
+/*see javascript code
+*{
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+}
+*/
+
+/*overwrite menu panel list view look*/
+.menu_links li{
+	background: transparent !important;
+	border:none;
+	border-bottom:0px solid #eeeeee;
+}
+
+.menu_links .ui-btn{
+margin-top:0px;
+border:0px;
+}
+
+.menu_links .ui-btn-inner{
+	margin-top:10px;
+	margin-left:30px;
+	width:80%;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.ui-panel-animate{
+	transition:transform 1350 ms ease 0s !important;
+}
+
+/* make images spin */
+a:active img {
+    -webkit-transform: rotate(100deg);
+    -webkit-transition: -webkit-transform 2s ease-out;
+}
